@@ -1,0 +1,34 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    height: 100%;
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body { 
+    font-family: 'Inter', -apple-system, sans-serif; 
+    background-color: var(--bg-main); 
+    color: var(--text-main); 
+    display: flex; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#bgCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+button, input, textarea, select { font-family: inherit; }

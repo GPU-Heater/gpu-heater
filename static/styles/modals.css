@@ -1,0 +1,28 @@
+.modal-overlay { 
+    position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+    display: none; justify-content: center; align-items: center; z-index: 100; 
+}
+.modal { 
+    background: var(--bg-panel); width: 90%; max-width: 500px; border-radius: var(--radius-lg); 
+    box-shadow: var(--shadow-lg); border: 1px solid var(--border); display: flex; flex-direction: column; 
+}
+.modal-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; border-bottom: 1px solid var(--border); }
+.modal-header h3 { font-size: 18px; margin: 0; display: flex; align-items: center; gap: 8px; color: var(--text-main);}
+.close-modal { background: none; border: none; font-size: 18px; color: var(--text-muted); cursor: pointer; }
+.modal-body { padding: 24px; overflow-y: auto; max-height: 60vh; }
+.modal-body label { display: block; font-size: 13.5px; font-weight: 600; margin-bottom: 6px; color: var(--text-main); }
+.modal-body textarea, .modal-body input[type="number"], .modal-body select {
+    width: 100%; background: var(--bg-input); border: 1px solid var(--border); color: var(--text-main);
+    border-radius: var(--radius-md); padding: 10px; font-size: 14px; margin-bottom: 16px; outline: none; transition: 0.2s;
+}
+.modal-body textarea:focus, .modal-body input:focus, .modal-body select:focus { border-color: var(--accent); }
+.flex-row { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.flex-row-gap { display: flex; gap: 10px; align-items: center; }
+.modal-actions { padding: 16px 24px; border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 12px; background: var(--bg-hover); border-bottom-left-radius: var(--radius-lg); border-bottom-right-radius: var(--radius-lg); }
+
+.dm-tab-btn { flex: 1; padding: 12px; background: transparent; border: none; border-bottom: 2px solid transparent; color: var(--text-muted); font-weight: 600; cursor: pointer; transition: 0.2s; font-size: 14px; }
+.dm-tab-btn:hover { background: var(--bg-hover); color: var(--text-main); }
+.dm-tab-btn.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+.dm-list-item { display: flex; justify-content: space-between; align-items: center; background: var(--bg-panel); padding: 10px 15px; border-radius: var(--radius-md); border: 1px solid var(--border); font-size: 13px; margin-bottom: 8px; transition: 0.2s; }
+.dm-list-item:hover { border-color: var(--accent); }
+.dm-list-actions { display: flex; gap: 8px; }

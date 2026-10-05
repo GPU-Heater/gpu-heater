@@ -1,0 +1,160 @@
+[data-ui-theme="3d"] {
+    --bg-panel: #ece9d8;
+    --border: var(--accent);
+    --radius-md: 4px;
+    --radius-lg: 6px;
+    --radius-pill: 4px;
+}
+
+[data-theme="dark"][data-ui-theme="3d"] {
+    --bg-panel: #2d2d2d;
+    --border: #555;
+}
+
+[data-ui-theme="3d"] .sidebar, 
+[data-ui-theme="3d"] .modal,
+[data-ui-theme="3d"] .dropdown-menu {
+    background: var(--bg-panel) !important;
+    border: 2px solid var(--accent) !important;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.4) !important;
+}
+
+[data-ui-theme="3d"] .sidebar-header,
+[data-ui-theme="3d"] .modal-header,
+[data-ui-theme="3d"] .dropdown-header {
+    background: linear-gradient(180deg, var(--accent) 0%, var(--accent-hover) 100%) !important;
+    color: white !important;
+    border-bottom: 1px solid var(--accent-hover) !important;
+}
+
+[data-ui-theme="3d"] .brand-title, 
+[data-ui-theme="3d"] .modal-header h3 {
+    color: white !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6) !important;
+}
+
+[data-ui-theme="3d"] .chat-item, [data-ui-theme="3d"] .dm-list-item {
+    background: var(--bg-panel) !important;
+    border: 2px outset rgba(255, 255, 255, 0.7) !important;
+    border-radius: 0 !important;
+    margin-bottom: 6px;
+    transition: none !important;
+}
+
+[data-theme="dark"][data-ui-theme="3d"] .chat-item, [data-theme="dark"][data-ui-theme="3d"] .dm-list-item {
+    border: 2px outset #555 !important;
+}
+
+[data-ui-theme="3d"] .chat-item:hover, [data-ui-theme="3d"] .dm-list-item:hover {
+    background: var(--accent-light) !important;
+    border: 2px outset var(--accent) !important;
+}
+
+[data-ui-theme="3d"] .chat-item.active {
+    background: color-mix(in srgb, var(--accent) 15%, var(--bg-main)) !important;
+    border: 2px inset var(--accent) !important;
+    font-weight: bold !important;
+}
+
+[data-ui-theme="3d"] .dm-tab-btn {
+    border: 2px solid transparent;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+}
+
+[data-ui-theme="3d"] .dm-tab-btn.active {
+    background: var(--bg-panel);
+    border: 2px outset var(--accent);
+    border-bottom: none;
+    color: var(--text-main);
+}
+
+[data-ui-theme="3d"] .input-area-pill {
+    background: var(--bg-input) !important;
+    border: 2px inset color-mix(in srgb, var(--accent) 50%, gray) !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+}
+
+[data-ui-theme="3d"] .input-area-pill:focus-within {
+    border: 2px inset var(--accent) !important;
+    background: color-mix(in srgb, var(--accent-light) 20%, var(--bg-input)) !important;
+}
+
+[data-ui-theme="3d"] textarea,
+[data-ui-theme="3d"] input,
+[data-ui-theme="3d"] select,
+[data-ui-theme="3d"] .select-compact {
+    background: #ffffff !important;
+    color: #111827 !important;
+    border: 1px solid #7f9db9 !important;
+    border-radius: 0 !important;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.15) !important;
+}
+
+[data-ui-theme="3d"] select option,
+[data-ui-theme="3d"] .select-compact option {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+}
+
+[data-theme="dark"][data-ui-theme="3d"] textarea,
+[data-theme="dark"][data-ui-theme="3d"] input,
+[data-theme="dark"][data-ui-theme="3d"] select,
+[data-theme="dark"][data-ui-theme="3d"] .select-compact {
+    background: #1f2937 !important;
+    color: #f9fafb !important;
+    border: 1px solid #4b5563 !important;
+}
+
+[data-theme="dark"][data-ui-theme="3d"] select option,
+[data-theme="dark"][data-ui-theme="3d"] .select-compact option {
+    background-color: #1f2937 !important;
+    color: #f9fafb !important;
+}
+
+[data-ui-theme="3d"] .user-msg {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 80%, white) 0%, var(--accent-hover) 100%) !important;
+    border: 2px outset color-mix(in srgb, var(--accent) 50%, white) !important;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3) !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4) !important;
+}
+
+[data-ui-theme="3d"] .bot-msg {
+    background: linear-gradient(180deg, var(--bg-panel) 0%, color-mix(in srgb, var(--bg-panel) 90%, var(--accent)) 100%) !important;
+    border: 2px outset color-mix(in srgb, var(--border) 70%, white) !important;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2) !important;
+    border-radius: 8px !important;
+}
+
+[data-theme="dark"][data-ui-theme="3d"] .bot-msg {
+    border: 2px outset #555 !important;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5) !important;
+}
+
+[data-ui-theme="3d"] .btn-primary,
+[data-ui-theme="3d"] .btn-send {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 70%, white) 0%, var(--accent-hover) 100%) !important;
+    border: 2px outset color-mix(in srgb, var(--accent) 40%, white) !important;
+    border-radius: 4px !important;
+    color: white !important;
+}
+
+[data-ui-theme="3d"] .btn-primary:active,
+[data-ui-theme="3d"] .btn-send:active {
+    border: 2px inset var(--accent-hover) !important;
+    background: var(--accent-hover) !important;
+}
+
+[data-ui-theme="3d"] .btn-secondary,
+[data-ui-theme="3d"] .btn-icon {
+    background: linear-gradient(180deg, #f2f2f2 0%, #ebebeb 50%, #dddddd 50%, #cfcfcf 100%) !important;
+    border: 1px solid #8f8f8f !important;
+    border-radius: 3px !important;
+    box-shadow: inset 1px 1px 0 rgba(255,255,255,0.8), 1px 1px 2px rgba(0,0,0,0.2) !important;
+    color: #000 !important;
+}

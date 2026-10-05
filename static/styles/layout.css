@@ -1,0 +1,42 @@
+.sidebar { 
+    width: 300px; background: var(--bg-panel); border-right: 1px solid var(--border); 
+    display: flex; flex-direction: column; z-index: 20; transition: transform 0.3s ease;
+}
+.sidebar-header { padding: 20px; display: flex; flex-direction: column; gap: 20px; }
+.brand-logo-wrapper { display: flex; align-items: center; gap: 12px; }
+.logo-placeholder { 
+    width: 44px; height: 44px; background: var(--accent-light); border-radius: var(--radius-md); 
+    display: flex; justify-content: center; align-items: center; color: var(--accent); font-size: 20px; 
+}
+.brand-text-container { display: flex; flex-direction: column; }
+.brand-title { font-weight: 800; font-size: 20px; line-height: 1.1; letter-spacing: -0.5px;}
+.brand-subtitle { font-size: 11px; color: var(--text-muted); font-style: italic; margin-top: 2px; }
+
+.main-area { flex: 1; display: flex; flex-direction: column; position: relative; min-width: 0; height: 100%; height: 100dvh;}
+
+.top-bar { 
+    padding: 12px 24px; background: transparent; display: flex; 
+    justify-content: space-between; align-items: center; z-index: 10;
+}
+.top-bar-left, .top-bar-right { display: flex; align-items: center; gap: 12px; }
+.current-chat-header { font-size: 16px; font-weight: 600; color: var(--text-main); display:none;}
+
+.chat-window { 
+    flex: 1; padding: 20px 10%; display: flex; flex-direction: column; gap: 30px;
+    overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; overscroll-behavior-y: contain;
+}
+
+.welcome-screen { text-align: center; margin-top: 15vh; color: var(--text-muted); font-size: 16px;}
+.welcome-icon { font-size: 44px; color: var(--accent); margin-bottom: 20px; opacity: 0.9; }
+
+.attachment-area { padding: 0 10%; margin-bottom: 10px; }
+.workspace-panel { padding: 10px 10%; display: flex; gap: 10px; align-items: center; margin-bottom: 10px; background: var(--bg-panel); border-radius: var(--radius-md); border: 1px solid var(--border);}
+.workspace-panel input { flex: 1; padding: 8px 12px; border-radius: var(--radius-md); border: 1px solid var(--border); background: var(--bg-input); color: var(--text-main); outline:none; font-family: inherit;}
+
+.input-container-wrapper { padding: 0 10% 24px 10%; background: transparent; z-index: 10; }
+.input-area-pill { 
+    display: flex; align-items: flex-end; background: var(--bg-input); 
+    border: 1px solid var(--border); border-radius: var(--radius-pill); 
+    padding: 8px 12px; box-shadow: var(--shadow-lg); transition: box-shadow 0.3s, border-color 0.3s;
+}
+.input-area-pill:focus-within { border-color: var(--accent); }
