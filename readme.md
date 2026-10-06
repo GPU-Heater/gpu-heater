@@ -6,6 +6,10 @@ Turn your idle VRAM into a productivity powerhouse—and maybe generate a little
   <img src="docs/assets/demo-imgen.gif" alt="GPU-Heater Multimodal Image Generation Demo" width="100%">
 </p>
 
+> ⚠️ **Development Notice:**  
+> **GPU-Heater is currently in active development (Alpha v0.1.0).**  
+> We have primarily verified this build on Windows and macOS. Hardware behaviors can vary across different setups—feel free to **[open an Issue](../../issues)** for hardware compatibility reports, log submissions, and bug feedback!
+
 ---
 
 ### ⚠️ Hardware Expectations & System Optimization
